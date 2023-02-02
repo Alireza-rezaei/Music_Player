@@ -1,9 +1,7 @@
 const navbarAction = () => {
     const navbarLists = document.querySelectorAll('.navbar__nav--list');
     const navbarListsText = document.querySelectorAll('.navbar__nav--list-text');
-    const navbarListsIcon = document.querySelectorAll('.navbar__nav--list-icon path');
-    console.log(navbarListsIcon);
-    const navContainer = document.querySelector('.navbar__nav--lists');
+    const navbarListsIcon = document.querySelectorAll('.navbar__nav--list-icon');
     const ribbon = document.createElement('div');
     ribbon.classList.add('ribbon');
     navbarListsText[0].classList.add('active__text');
@@ -24,6 +22,8 @@ const navbarAction = () => {
             });
             document.querySelector('.ribbon').previousElementSibling.classList.add('active__text');
             document.querySelector('.ribbon').previousElementSibling.previousElementSibling.classList.add('active__icon');
+            navbarListsIcon[0].childNodes[1].style.fill = 'none';
+            console.log(navbarListsIcon[0].childNodes);
         });
     });
 };

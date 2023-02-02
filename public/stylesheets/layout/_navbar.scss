@@ -69,7 +69,10 @@
         color: $color-blue;
     }
     &__icon {
+        & * {
+            fill: $color-bg-white;
+            // stroke: $color-bg-white;
+        }
         fill: $color-bg-white;
-        stroke: $color-bg-white;
     }
 }

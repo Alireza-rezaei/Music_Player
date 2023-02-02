@@ -240,7 +240,9 @@ ul {
 }
 .active__icon {
   fill: #ECF0F3;
-  stroke: #ECF0F3;
+}
+.active__icon * {
+  fill: #ECF0F3;
 }
 
 /*# sourceMappingURL=main.css.map */
