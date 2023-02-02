@@ -1,3 +1,3 @@
-import { navbarAction } from '../js/Components/navbar.js';
+import { navbarAction } from './public/js/Components/navbar.js';
 
 navbarAction();
