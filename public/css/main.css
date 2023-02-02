@@ -1,0 +1,246 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ECF0F3;
+  font-family: "Neue", "Font Awesome 5 Pro", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7rem;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Neue";
+  src: url("../font/Neue Haas Grotesk Display Pro 65 Medium.eot");
+  src: url("../font/Neue Haas Grotesk Display Pro 65 Medium.eot?#iefix") format("embedded-opentype"), url("../font/Neue Haas Grotesk Display Pro 65 Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 993px) {
+  .show-large {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .show-small {
+    display: block;
+  }
+}
+
+/* Flex Helper  */
+.flex {
+  display: flex;
+}
+
+.justify-content-between {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.align-items-center {
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Padding Margin Helper  */
+.pb-10 {
+  padding-bottom: 1rem;
+}
+
+.pt-10 {
+  padding-top: 1rem;
+}
+
+.pb-20 {
+  padding-bottom: 2rem;
+}
+
+.pt-20 {
+  padding-top: 2rem;
+}
+
+.pb-50 {
+  padding-bottom: 5rem;
+}
+
+.pt-50 {
+  padding-top: 5rem;
+}
+
+.mb-10 {
+  margin-bottom: 1rem;
+}
+
+.mt-10 {
+  margin-top: 1rem;
+}
+
+.mb-20 {
+  margin-bottom: 2rem;
+}
+
+.mt-20 {
+  margin-top: 2rem;
+}
+
+.mb-50 {
+  margin-bottom: 5rem;
+}
+
+.mt-50 {
+  margin-top: 5rem;
+}
+
+.mb-60 {
+  margin-bottom: 6rem;
+}
+
+.mt-60 {
+  margin-top: 6rem;
+}
+
+.player__box {
+  width: 110rem;
+  height: 70rem;
+}
+
+.navbar {
+  width: 30rem;
+  height: 100%;
+  margin-top: 10rem;
+}
+.navbar__nav {
+  height: inherit;
+}
+.navbar__nav--lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.navbar__nav--list {
+  position: relative;
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #8A8A8A;
+}
+.navbar__nav--list svg {
+  width: 6rem;
+  margin-right: 2.5rem;
+}
+.navbar__nav--list-text {
+  width: 5rem;
+  cursor: pointer;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+}
+.logout__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: absolute;
+  width: 16rem;
+  height: 6.1rem;
+  background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(7.5px);
+  cursor: pointer;
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+.logout__btn svg {
+  margin-right: 1rem;
+}
+
+.ribbon {
+  position: absolute;
+  width: 127px;
+  height: 76px;
+  left: -4rem;
+  top: 0px;
+  background: linear-gradient(270deg, #618FF0 0%, #26D1DB 103.49%);
+  border-radius: 0px 38px 38px 0px;
+  z-index: -1;
+}
+
+.active__text {
+  color: #628EF1;
+}
+.active__icon {
+  fill: #ECF0F3;
+  stroke: #ECF0F3;
+}
+
+/*# sourceMappingURL=main.css.map */

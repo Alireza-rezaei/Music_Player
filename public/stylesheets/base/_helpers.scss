@@ -1,0 +1,117 @@
+.container {
+    @include Flex(center, center);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    @media only screen and (min-width: 576px) {
+        max-width: 540px;
+    }
+    @media only screen and (min-width: 768px) {
+        max-width: 720px;
+    }
+    @media only screen and (min-width: 992px) {
+        max-width: 960px;
+    }
+    @media only screen and (min-width: 1200px) {
+        max-width: 1140px;
+    }
+    @media only screen and (min-width: 1400px) {
+        max-width: 1320px;
+    }
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.show-large {
+    @media only screen and (min-width: 993px) {
+        display: block;
+    }
+}
+
+.show-small {
+    @media only screen and (max-width: 992px) {
+        display: block;
+    }
+}
+
+
+/* Flex Helper  */
+
+.flex {
+    display: flex;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.align-items-center {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/* Padding Margin Helper  */
+
+.pb-10 {
+    padding-bottom: 1rem;
+}
+
+.pt-10 {
+    padding-top: 1rem;
+}
+
+.pb-20 {
+    padding-bottom: 2rem;
+}
+
+.pt-20 {
+    padding-top: 2rem;
+}
+
+.pb-50 {
+    padding-bottom: 5rem;
+}
+
+.pt-50 {
+    padding-top: 5rem;
+}
+
+.mb-10 {
+    margin-bottom: 1rem;
+}
+
+.mt-10 {
+    margin-top: 1rem;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.mt-20 {
+    margin-top: 2rem;
+}
+
+.mb-50 {
+    margin-bottom: 5rem;
+}
+
+.mt-50 {
+    margin-top: 5rem;
+}
+
+.mb-60 {
+    margin-bottom: 6rem;
+}
+
+.mt-60 {
+    margin-top: 6rem;
+}
