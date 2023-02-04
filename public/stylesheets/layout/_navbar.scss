@@ -31,21 +31,8 @@
     @include Flex(center, center, column);
     width: 30rem;
     height: 30rem;
-}
-
-.btn {
-    @include Flex(center, center);
-    box-sizing: border-box;
-    width: 18rem;
-    height: 6.1rem;
-    background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
-    border: 2px solid rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(7.5px);
-    cursor: pointer;
-    margin: 1rem 0;
-    border-radius: 20px;
-    & svg {
-        margin-right: 1rem;
+    &__btn {
+        cursor: pointer;
     }
 }
 
@@ -62,7 +49,7 @@
 
 .active {
     &__text {
-        color: $color-blue;
+        color: $color-blue !important;
     }
     &__icon {
         & * {
@@ -73,45 +60,12 @@
     }
 }
 
-input[type=checkbox] {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-}
-
-label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 5rem;
-    height: 3rem;
-    background: grey;
-    display: block;
-    border-radius: 100px;
-    position: relative;
-    margin-left: 1rem;
-}
-
-label:after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 2rem;
-    height: 2rem;
-    background: #fff;
-    border-radius: 90px;
-    transition: 0.3s;
-}
-
-input:checked+label {
-    background: #bada55;
-}
-
-input:checked+label:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-}
-
-label:active:after {
-    width: 2rem;
+.dark-mode {
+    background-color: $color-bg-dark;
+    & span {
+        color: $color-bg-white;
+    }
+    & .btn {
+        background: linear-gradient(135.81deg, rgb(41 41 41) 4.06%, rgb(255 252 252 / 5%) 95.82%);
+    }
 }

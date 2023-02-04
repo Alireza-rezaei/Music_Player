@@ -1,20 +1,22 @@
 .btn {
     @include Flex(center, center);
     box-sizing: border-box;
-    width: 18rem;
+    width: 20rem;
     height: 6.1rem;
     background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
     border: 2px solid rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(7.5px);
-    cursor: pointer;
     margin: 1rem 0;
     border-radius: 20px;
+    color: $color-blue;
+    font-size: 1.7rem;
     & svg {
         margin-right: 1rem;
     }
 }
 
 #switch[type=checkbox] {
+    cursor: pointer;
     height: 0;
     width: 0;
     visibility: hidden;
@@ -45,7 +47,7 @@
 }
 
 #switch:checked+.switch__label {
-    background: #bada55;
+    background: $purple-gradient;
 }
 
 #switch:checked+.switch__label:after {
@@ -55,4 +57,14 @@
 
 .switch__label:active:after {
     width: 2rem;
+}
+
+.darkModeBtn {
+    position: relative;
+    left: -30rem;
+    transition: all $cubic-bezier .5s;
+}
+
+.activeDarkModeBtn {
+    left: 0;
 }
