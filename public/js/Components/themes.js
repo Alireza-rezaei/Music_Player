@@ -8,26 +8,30 @@ const switchTheme = () => {
     const ribbon = document.querySelector('.ribbon');
     const homePageElement = document.getElementById('homePage');
     const homePageText = document.querySelector('#homePage .navbar__nav--list-text');
-    const navbarLists = document.querySelectorAll('.navbar__nav--lists');
 
     themesBtn.addEventListener('click', (e) => {
         darkModeBtn.classList.add('activeDarkModeBtn');
         themesBtn.classList.add('active__theme');
+        themesBtn.classList.add('activate');
     });
 
     window.addEventListener('click', (e) => {
         if (themesBtn.className.includes('active__theme')) {
             darkModeBox.classList.add('activeDarkModeBtn');
-            themesBtn.className = 'navbar__nav--list';
+            themesBtn.classList.remove('active__theme');
         } else {
             darkModeBox.classList.remove('activeDarkModeBtn');
-            window.addEventListener('click', function(e) {
-                if (document.querySelector('.navbar__nav--lists').contains(e.target)) {} else {
+            if (document.querySelector('.navbar__nav--lists').contains(e.target)) {
+                console.log('clicked in navbar');
+                console.log(e.target);
+            } else {
+                if (themesBtn.className.includes('activate')) {
                     homePageElement.append(ribbon);
                     homePageText.classList.add('active__text');
                     themeBtnText.className = 'navbar__nav--list-text';
+                    themesBtn.classList.remove('activate');
                 }
-            });
+            }
         }
     });
 
