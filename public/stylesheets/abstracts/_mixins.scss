@@ -22,3 +22,10 @@
 @mixin bg-gradient($gradient) {
     background: linear-gradient($gradient);
 }
+
+@mixin center-transform ($pos:absolute, $top:50%, $left:50%, $trans:translate(-50%, -50%)) {
+    position: $pos;
+    top: $top;
+    left: $left;
+    transform: $trans;
+}

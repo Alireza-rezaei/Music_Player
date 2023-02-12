@@ -7,8 +7,6 @@ const logoutAction = () => {
         console.log(isClose);
 
         if (isClose) {
-            window.open(`${window.location}`);
-            window.close();
             console.log('closed');
         }
     });

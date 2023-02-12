@@ -8,8 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^8.0.0"
-  }
+  "license": "ISC"
 }

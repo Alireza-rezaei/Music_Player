@@ -1,0 +1,17 @@
+.filter {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem 4rem;
+    background: $purple-gradient;
+    box-shadow: 1.5px 2.5px 2.5px rgba(97, 141, 240, 0.45);
+    border-radius: 12px;
+    cursor: pointer;
+    &__btn {
+        @include center-transform(absolute, 55%);
+        // position: absolute;
+        // top: 55%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+    }
+}

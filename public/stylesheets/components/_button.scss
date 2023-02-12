@@ -3,7 +3,7 @@
     box-sizing: border-box;
     width: 20rem;
     height: 6.1rem;
-    background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
+    background: $gray-gradient;
     border: 2px solid rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(7.5px);
     margin: 1rem 0;

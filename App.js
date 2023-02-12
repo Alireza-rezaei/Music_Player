@@ -1,7 +1,10 @@
 import { navbarAction } from './public/js/Components/navbar.js';
 import { switchTheme } from './public/js/Components/themes.js';
 import { logoutAction } from './public/js/Components/logout.js';
-
+import { headerAction } from './public/js/Components/header.js';
+import { showArtist } from './public/js/Components/popularArtist.js';
 navbarAction();
 switchTheme();
 logoutAction();
+headerAction();
+showArtist();

@@ -1,0 +1,33 @@
+.header {
+    &__nav {
+        @include Flex(center, center);
+        &--box {
+            @include Flex(flex-start, center);
+            margin: 1rem;
+            width: 60rem;
+        }
+        &--text {
+            padding: 2rem;
+            color: $color-gray;
+            cursor: pointer;
+        }
+    }
+}
+
+.active__header {
+    position: relative;
+    color: $color-dark;
+    &::after {
+        content: '';
+        @include center-transform(absolute, 75%, 50%, translate(-50%, 0%));
+        display: inline-block;
+        // position: absolute;
+        // top: 70%;
+        // left: 50%;
+        // transform: translate(-50%, 0%);
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: #618DF0;
+        border-radius: 50%;
+    }
+}

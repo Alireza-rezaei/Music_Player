@@ -1,3 +1,4 @@
 .player__box {
+    display: flex;
     @include Box(110rem, 70rem);
 }

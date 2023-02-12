@@ -24,6 +24,7 @@ const switchTheme = () => {
             if (document.querySelector('.navbar__nav--lists').contains(e.target)) {
                 console.log('clicked in navbar');
                 console.log(e.target);
+                themesBtn.classList.remove('activate');
             } else {
                 if (themesBtn.className.includes('activate')) {
                     homePageElement.append(ribbon);

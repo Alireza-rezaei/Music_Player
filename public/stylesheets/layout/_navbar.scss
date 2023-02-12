@@ -30,7 +30,7 @@
 .logout {
     @include Flex(center, center, column);
     width: 30rem;
-    height: 30rem;
+    height: 25rem;
     &__btn {
         cursor: pointer;
     }
@@ -42,7 +42,7 @@
     height: 76px;
     left: -4rem;
     top: 0px;
-    background: linear-gradient(270deg, #618FF0 0%, #26D1DB 103.49%);
+    background: $purple-gradient;
     border-radius: 0px 38px 38px 0px;
     z-index: -1;
 }
@@ -54,7 +54,6 @@
     &__icon {
         & * {
             fill: $color-bg-white;
-            // stroke: $color-bg-white;
         }
         fill: $color-bg-white;
     }

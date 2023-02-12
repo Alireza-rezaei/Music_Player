@@ -1,0 +1,33 @@
+[{
+        "artistName": "Reza Pishro",
+        "profilePicture": "src/images/artist/pishro.png"
+    },
+    {
+        "artistName": "Ho3in",
+        "profilePicture": "src/images/artist/hosein.png"
+    },
+    {
+        "artistName": "Amir Tataloo",
+        "profilePicture": "src/images/artist/tataloo.jpg"
+    },
+    {
+        "artistName": "Bahram",
+        "profilePicture": "src/images/artist/bahram.png"
+    },
+    {
+        "artistName": "Ali Sorena",
+        "profilePicture": "src/images/artist/sorena.png"
+    },
+    {
+        "artistName": "Fadaei",
+        "profilePicture": "src/images/artist/fadaei.png"
+    },
+    {
+        "artistName": "Qaf",
+        "profilePicture": "src/images/artist/qaf.png"
+    },
+    {
+        "artistName": "021 Kid",
+        "profilePicture": "src/images/artist/kid.png"
+    }
+]

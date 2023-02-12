@@ -1,0 +1,28 @@
+.search {
+    &__box {
+        position: relative;
+        width: 26rem;
+        height: 5rem;
+    }
+    & input {
+        width: 26rem;
+        height: 5rem;
+        outline: none;
+        padding: 2rem;
+        padding-left: 4rem;
+        color: $color-gray;
+        background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(7.5px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 29.5px;
+    }
+    & svg {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+}
