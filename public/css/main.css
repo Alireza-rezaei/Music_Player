@@ -169,7 +169,7 @@ ul {
 .navbar {
   width: 30rem;
   height: 100%;
-  margin-top: 10rem;
+  margin-top: 12rem;
 }
 .navbar__nav {
   height: inherit;
@@ -251,11 +251,11 @@ ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 1rem;
-  width: 60rem;
+  margin: 0 1rem;
+  width: 58rem;
 }
 .header__nav--text {
-  padding: 2rem;
+  padding: 1rem 2rem;
   color: #8A8A8A;
   cursor: pointer;
 }
@@ -395,7 +395,7 @@ ul {
 }
 
 .popular {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-left: 3rem;
 }
 .popular h3 {
@@ -416,16 +416,34 @@ ul {
 .popular__info:first-child {
   margin-left: -2rem;
 }
+.popular__info * {
+  cursor: pointer;
+}
 .popular__picture {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  margin: 2rem 2rem 0.5rem 2rem;
+  margin: 1rem 2rem 0.5rem 2rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
 }
 .popular__name {
   margin-top: 1rem;
   color: #8A8A8A;
+  font-size: 1.3rem;
+}
+
+.dark-mode .search__box input {
+  color: #ECF0F3;
+  background: linear-gradient(135.81deg, rgb(44, 44, 44) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
+}
+.dark-mode .search__box input:focus::placeholder {
+  color: #ECF0F3;
+}
+.dark-mode .popular h3 {
+  color: #ECF0F3;
+}
+.dark-mode .header .header__nav--text {
+  color: #ECF0F3;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 .popular {
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding-left: 3rem;
     & h3 {
         color: $color-dark;
@@ -12,18 +12,42 @@
         &:first-child {
             margin-left: -2rem;
         }
-        @include Flex(center, center, column)
+        @include Flex(center, center, column);
+        & * {
+            cursor: pointer;
+        }
     }
     &__picture {
         width: 8rem;
         height: 8rem;
         border-radius: 50%;
-        margin: 2rem 2rem .5rem 2rem;
+        margin: 1rem 2rem .5rem 2rem;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
     }
     &__name {
         // margin-right: 4rem;
         margin-top: 1rem;
         color: $color-gray;
+        font-size: 1.3rem;
+    }
+}
+
+.dark-mode {
+    & .search__box input {
+        &:focus::placeholder {
+            color: $color-bg-white;
+        }
+        color: $color-bg-white;
+        background: linear-gradient(135.81deg, rgb(44 44 44) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
+    }
+    & .popular {
+        & h3 {
+            color: $color-bg-white;
+        }
+    }
+    & .header {
+        & .header__nav--text {
+            color: $color-bg-white;
+        }
     }
 }
