@@ -1,2 +1,10 @@
-// h1,
-// h2,
+.title {
+    color: $color-dark;
+    margin-bottom: 1rem;
+}
+
+.dark-mode {
+    .title {
+        color: $color-bg-white;
+    }
+}

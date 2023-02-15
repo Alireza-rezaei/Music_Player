@@ -160,6 +160,15 @@ ul {
   margin-top: 6rem;
 }
 
+.title {
+  color: #2B2F42;
+  margin-bottom: 1rem;
+}
+
+.dark-mode .title {
+  color: #ECF0F3;
+}
+
 .player__box {
   display: flex;
   width: 110rem;
@@ -242,6 +251,9 @@ ul {
   background: linear-gradient(135.81deg, rgb(41, 41, 41) 4.06%, rgba(255, 252, 252, 0.05) 95.82%);
 }
 
+.header {
+  width: 100rem;
+}
 .header__nav {
   display: flex;
   justify-content: center;
@@ -397,6 +409,7 @@ ul {
 .popular {
   margin-top: 1rem;
   padding-left: 3rem;
+  overflow: hidden;
 }
 .popular h3 {
   color: #2B2F42;
@@ -406,6 +419,7 @@ ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  user-select: none;
 }
 .popular__info {
   display: flex;
@@ -423,7 +437,7 @@ ul {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  margin: 1rem 2rem 0.5rem 2rem;
+  margin: 1rem 2.2rem 0.5rem 2rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
 }
 .popular__name {
@@ -443,6 +457,46 @@ ul {
   color: #ECF0F3;
 }
 .dark-mode .header .header__nav--text {
+  color: #ECF0F3;
+}
+
+.trend {
+  margin-top: 3rem;
+  padding-left: 3rem;
+}
+.trend__boxes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.trend__boxes :first-child img, .trend__boxes :last-child img {
+  margin: 0;
+}
+.trend__box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-direction: column;
+}
+.trend__box img {
+  width: 22rem;
+  height: 30rem;
+  margin: 0 14rem 0 13rem;
+  border-radius: 3rem;
+}
+.trend__box span {
+  padding: 0rem 0.5rem;
+  font-size: 1.3rem;
+}
+.trend__box * {
+  color: #8A8A8A;
+}
+.trend__musicName {
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+}
+
+.dark-mode .trend__musicName {
   color: #ECF0F3;
 }
 

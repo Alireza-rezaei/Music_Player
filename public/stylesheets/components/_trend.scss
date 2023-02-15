@@ -1,0 +1,41 @@
+    .trend {
+        margin-top: 3rem;
+        padding-left: 3rem;
+        &__boxes {
+            @include Flex(flex-start, center);
+            & :first-child,
+            & :last-child {
+                img {
+                    margin: 0;
+                }
+            }
+        }
+        &__box {
+            @include Flex(flex-start, baseline, column);
+            & img {
+                width: 22rem;
+                height: 30rem;
+                margin: 0 14rem 0 13rem;
+                border-radius: 3rem;
+            }
+            & span {
+                padding: 0rem .5rem;
+                font-size: 1.3rem;
+            }
+            & * {
+                color: $color-gray;
+            }
+        }
+        &__musicName {
+            padding: 1rem .5rem;
+            font-size: 2rem;
+        }
+    }
+    
+    .dark-mode {
+        .trend {
+            &__musicName {
+                color: $color-bg-white;
+            }
+        }
+    }
