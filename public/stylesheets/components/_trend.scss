@@ -1,4 +1,5 @@
     .trend {
+        overflow: hidden;
         margin-top: 3rem;
         padding-left: 3rem;
         &__boxes {
@@ -11,7 +12,10 @@
             }
         }
         &__box {
-            @include Flex(flex-start, baseline, column);
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            cursor: pointer;
             & img {
                 width: 22rem;
                 height: 30rem;
@@ -29,12 +33,16 @@
         &__musicName {
             padding: 1rem .5rem;
             font-size: 2rem;
+            color: $color-dark;
         }
     }
     
     .dark-mode {
         .trend {
             &__musicName {
+                color: $color-bg-white;
+            }
+            & .title {
                 color: $color-bg-white;
             }
         }

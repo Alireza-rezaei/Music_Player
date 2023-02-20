@@ -1,4 +1,4 @@
-import Artist from '../API/API.json' assert { type: 'json' };
+import Artist from '../API/popularArtist.json' assert { type: 'json' };
 
 const showArtist = () => {
 	console.log('show artist Is Active');
@@ -22,7 +22,7 @@ const showArtist = () => {
 export { showArtist };
 
 
-// fetch('https://data.mongodb-api.com/app/data-uthqi/endpoint/data/v1', {
+// fetch('https://music-player-83856-default-rtdb.firebaseio.com/Artist', {
 // 	method: 'POST', // or 'PUT'
 // 	headers: {
 // 		'Content-Type': 'application/json',

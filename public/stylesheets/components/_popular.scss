@@ -2,9 +2,8 @@
     margin-top: 1rem;
     padding-left: 3rem;
     overflow: hidden;
-    & h3 {
-        color: $color-dark;
-        margin-bottom: 1rem;
+    & & svg {
+        margin-right: 2rem;
     }
     &__infos {
         @include Flex(flex-start, center);
@@ -32,6 +31,14 @@
         color: $color-gray;
         font-size: 1.3rem;
     }
+}
+
+.popular .title,
+.trend .title {
+    width: calc(100% - 11rem);
+    display: inline-block;
+    color: $color-dark;
+    margin: 0 auto 1rem .5rem;
 }
 
 .dark-mode {

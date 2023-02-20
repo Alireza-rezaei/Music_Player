@@ -411,9 +411,8 @@ ul {
   padding-left: 3rem;
   overflow: hidden;
 }
-.popular h3 {
-  color: #2B2F42;
-  margin-bottom: 1rem;
+.popular .popular svg {
+  margin-right: 2rem;
 }
 .popular__infos {
   display: flex;
@@ -446,6 +445,14 @@ ul {
   font-size: 1.3rem;
 }
 
+.popular .title,
+.trend .title {
+  width: calc(100% - 11rem);
+  display: inline-block;
+  color: #2B2F42;
+  margin: 0 auto 1rem 0.5rem;
+}
+
 .dark-mode .search__box input {
   color: #ECF0F3;
   background: linear-gradient(135.81deg, rgb(44, 44, 44) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
@@ -461,6 +468,7 @@ ul {
 }
 
 .trend {
+  overflow: hidden;
   margin-top: 3rem;
   padding-left: 3rem;
 }
@@ -474,9 +482,9 @@ ul {
 }
 .trend__box {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
   flex-direction: column;
+  align-items: baseline;
+  cursor: pointer;
 }
 .trend__box img {
   width: 22rem;
@@ -494,10 +502,18 @@ ul {
 .trend__musicName {
   padding: 1rem 0.5rem;
   font-size: 2rem;
+  color: #2B2F42;
 }
 
 .dark-mode .trend__musicName {
   color: #ECF0F3;
+}
+.dark-mode .trend .title {
+  color: #ECF0F3;
+}
+
+.next-prev-Btn {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
