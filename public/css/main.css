@@ -574,7 +574,7 @@ span {
   margin-left: 5rem;
 }
 .recently__container {
-  width: 50rem;
+  width: 53rem;
   height: 29rem;
 }
 .recently__container > :first-child {
@@ -584,7 +584,7 @@ span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 50rem;
+  width: 53rem;
   height: 10.7rem;
   background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
   border: 2px solid rgba(255, 255, 255, 0.6);
@@ -599,6 +599,7 @@ span {
   cursor: pointer;
 }
 .recently__name {
+  width: 8rem;
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
@@ -613,14 +614,68 @@ span {
 }
 .recently__content > svg {
   display: block;
-  width: 20rem;
+  width: 22rem;
   height: 5rem;
-  margin-left: 3rem;
   cursor: pointer;
 }
 .recently__play {
   margin: 0 3rem;
   cursor: pointer;
+}
+
+.sidebar {
+  width: 40rem;
+}
+
+.friends {
+  width: 38rem;
+  margin-top: 2rem;
+}
+.friends__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friends__title h3 {
+  margin-right: auto;
+}
+.friends > span {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.friends__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+.friends__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.friends__content > img {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+}
+.friends__content > svg {
+  align-self: flex-start;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.friends__name {
+  margin: 1rem;
+  width: 13rem;
+}
+.friends__name > p {
+  font-size: 1.6rem;
+}
+.friends__name > span {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

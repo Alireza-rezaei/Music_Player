@@ -1,0 +1,44 @@
+.friends {
+    width: 38rem;
+    margin-top: 2rem;
+    &__title {
+        @include Flex(space-between, center);
+        & h3 {
+            margin-right: auto;
+        }
+    }
+    &>span {
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    &__container {
+        @include Flex(flex-start, start);
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+    &__content {
+        @include Flex(flex-start, center);
+        margin-bottom: 3rem;
+        &>img {
+            width: 6.5rem;
+            height: 6.5rem;
+            border-radius: 50%;
+        }
+        &>svg {
+            align-self: flex-start;
+            margin-top: 2rem;
+            margin-left: 1rem;
+        }
+    }
+    &__name {
+        margin: 1rem;
+        width: 13rem;
+        &>p {
+            font-size: 1.6rem;
+        }
+        &>span {
+            font-size: 1.2rem;
+        }
+    }
+}

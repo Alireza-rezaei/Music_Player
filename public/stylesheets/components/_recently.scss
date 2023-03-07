@@ -31,7 +31,7 @@
         margin-left: 5rem;
     }
     &__container {
-        width: 50rem;
+        width: 53rem;
         height: 29rem;
         &> :first-child {
             margin-bottom: 4rem;
@@ -39,7 +39,7 @@
     }
     &__content {
         @include Flex(flex-start, center);
-        width: 50rem;
+        width: 53rem;
         height: 10.7rem;
         background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
         border: 2px solid rgba(255, 255, 255, 0.6);
@@ -54,6 +54,7 @@
         }
     }
     &__name {
+        width: 8rem;
         @include Flex ();
         flex-direction: column;
         margin-left: 2rem;
@@ -68,9 +69,8 @@
     }
     &__content>svg {
         display: block;
-        width: 20rem;
+        width: 22rem;
         height: 5rem;
-        margin-left: 3rem;
         cursor: pointer;
     }
     &__play {
