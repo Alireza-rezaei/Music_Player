@@ -28,9 +28,10 @@
 }
 
 .logout {
-    @include Flex(center, center, column);
+    @include Flex(flex-end, center, column);
     width: 30rem;
-    height: 25rem;
+    height: 40rem;
+    padding: 10rem 0;
     &__btn {
         cursor: pointer;
     }

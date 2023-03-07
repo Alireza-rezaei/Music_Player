@@ -2,6 +2,7 @@
         overflow: hidden;
         margin-top: 3rem;
         padding-left: 3rem;
+        user-select: none;
         &__boxes {
             @include Flex(flex-start, center);
             & :first-child,
@@ -31,10 +32,22 @@
             }
         }
         &__musicName {
+            display: flex;
+            width: 21rem;
             padding: 1rem .5rem;
             font-size: 2rem;
             color: $color-dark;
+            & svg {
+                position: relative;
+                top: 1.5rem;
+                margin-left: auto;
+                // margin-top: 2rem;
+            }
         }
+    }
+    
+    .like {
+        fill: $color-red
     }
     
     .dark-mode {

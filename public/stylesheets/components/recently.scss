@@ -1,0 +1,80 @@
+.recently {
+    overflow: hidden;
+    margin-top: 3rem;
+    padding-left: 3rem;
+    user-select: none;
+    &__boxes {
+        @include Flex(flex-start, center);
+    }
+    &__box--big {
+        &-container {
+            position: relative;
+            width: 35rem;
+            height: 30rem;
+            margin-top: 1rem;
+        }
+        & img {
+            width: 35rem;
+            height: 26rem;
+            border-radius: 30px;
+        }
+        & svg {
+            position: absolute;
+            @include center-transform;
+            top: 45%;
+            cursor: pointer;
+        }
+    }
+    &__box {
+        @include Flex(center, center);
+        flex-direction: column;
+        margin-left: 5rem;
+    }
+    &__container {
+        width: 50rem;
+        height: 29rem;
+        &> :first-child {
+            margin-bottom: 4rem;
+        }
+    }
+    &__content {
+        @include Flex(flex-start, center);
+        width: 50rem;
+        height: 10.7rem;
+        background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(7.5px);
+        border-radius: 30px;
+        & img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            margin: 1rem;
+            cursor: pointer;
+        }
+    }
+    &__name {
+        @include Flex ();
+        flex-direction: column;
+        margin-left: 2rem;
+        cursor: pointer;
+        & span {
+            font-size: 1.4rem;
+            margin-bottom: .7rem;
+        }
+        & .title {
+            font-size: 1.8rem;
+        }
+    }
+    &__content>svg {
+        display: block;
+        width: 20rem;
+        height: 5rem;
+        margin-left: 3rem;
+        cursor: pointer;
+    }
+    &__play {
+        margin: 0 3rem;
+        cursor: pointer;
+    }
+}

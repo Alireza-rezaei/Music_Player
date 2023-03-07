@@ -5,7 +5,7 @@ const showArtist = () => {
 	const artistContainer = document.querySelector('.popular__infos');
 
 	Artist.forEach((item) => {
-		console.log(item);
+	//	console.log(item);
 
 		artistContainer.insertAdjacentHTML(
 			`beforeend`,

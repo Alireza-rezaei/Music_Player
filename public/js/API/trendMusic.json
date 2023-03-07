@@ -1,16 +1,19 @@
 [{
         "artistName": "Reza Pishro",
         "coverSong": "src/images/trends/miritolak-pishro.png",
-        "musicName": "Miri To Lak"
+        "musicName": "Miri To Lak",
+        "favorite": true
     },
     {
         "artistName": "Bahram",
         "coverSong": "src/images/trends/ghosht-bahram.png",
-        "musicName": "Ghosht"
+        "musicName": "Ghosht",
+        "favorite": false
     },
     {
         "artistName": "Amir Tataloo",
         "coverSong": "src/images/trends/harekat-sorena.png",
-        "musicName": "Harekat"
+        "musicName": "Harekat",
+        "favorite": false
     }
 ]
