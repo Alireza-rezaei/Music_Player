@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light">
+    <link rel="shortcut icon" href="src/images/favicon/favicon.png" type="icon">
     <link rel="stylesheet" href="public/css/main.css">
-    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">
-    <!-- <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css"> -->
-    <!-- <script defer src="src/library/owlCarousel/owl.carousel.js"></script> -->
     <script defer type="module" src="App.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Music Player</title>
 </head>
 
 <body>
+    <!-- container Music Player  -->
     <div class="containers">
         <section class="player__box">
+            <!-- Navbar Music Player  -->
             <div class="navbar">
                 <div class="navbar__nav">
                     <ul class="navbar__nav--lists">
@@ -102,8 +103,9 @@
                     </div>
                 </div>
             </div>
-
+            <!-- main Section Music Player (includes => header & Popular & trends & Recently Songs) -->
             <main>
+                <!-- header Section  -->
                 <header class="header">
                     <div class="header__box">
                         <div class="header__nav">
@@ -145,10 +147,11 @@
                         </div>
                     </div>
                     <header>
-
+                        <!-- Popular Section  -->
                         <div class="popular">
                             <div>
                                 <h3 class="title">Popular Artist</h3>
+                                <div class="prevBox"></div>
                                 <svg class="next-prev-Btn" width="55" height="24" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="prevBtn" d="M12.0357 17.9272C11.9056 17.9277 11.7772 17.899 11.6597 17.8432C11.5423 17.7875 11.4388 17.7062 11.3569 17.6052L7.15354 12.3837C7.02554 12.228 6.95557 12.0327 6.95557 11.8311C6.95557 11.6295 7.02554 11.4342 7.15354 11.2785L11.5048 6.05696C11.6525 5.87924 11.8648 5.76748 12.0949 5.74626C12.325 5.72505 12.5541 5.79611 12.7319 5.94383C12.9096 6.09154 13.0213 6.30381 13.0426 6.53393C13.0638 6.76404 12.9927 6.99317 12.845 7.17089L8.95496 11.8354L12.7145 16.5C12.8209 16.6277 12.8885 16.7833 12.9093 16.9482C12.93 17.1132 12.9031 17.2807 12.8317 17.4308C12.7603 17.5809 12.6474 17.7075 12.5063 17.7955C12.3652 17.8834 12.2019 17.9292 12.0357 17.9272Z" fill="black"/>
                                     <rect class="nextBtn" x="31.3291" width="23.6709" height="23.6709" rx="8" fill="#FFFEFE"/>
@@ -161,13 +164,14 @@
 
                             </div>
                         </div>
-
+                        <!-- Trends Section  -->
                         <div class="trend">
 
                             <div>
                                 <h3 class="title">Trendy Songs</h3>
+                                <div class="prevBox"></div>
                                 <svg class="next-prev-Btn" width="55" height="24" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="prevBtn" d="M12.0357 17.9272C11.9056 17.9277 11.7772 17.899 11.6597 17.8432C11.5423 17.7875 11.4388 17.7062 11.3569 17.6052L7.15354 12.3837C7.02554 12.228 6.95557 12.0327 6.95557 11.8311C6.95557 11.6295 7.02554 11.4342 7.15354 11.2785L11.5048 6.05696C11.6525 5.87924 11.8648 5.76748 12.0949 5.74626C12.325 5.72505 12.5541 5.79611 12.7319 5.94383C12.9096 6.09154 13.0213 6.30381 13.0426 6.53393C13.0638 6.76404 12.9927 6.99317 12.845 7.17089L8.95496 11.8354L12.7145 16.5C12.8209 16.6277 12.8885 16.7833 12.9093 16.9482C12.93 17.1132 12.9031 17.2807 12.8317 17.4308C12.7603 17.5809 12.6474 17.7075 12.5063 17.7955C12.3652 17.8834 12.2019 17.9292 12.0357 17.9272Z" fill="black"/>
+                                        <path class="prevBtn" d="M12.0357 17.9272C11.9056 17.9277 11.7772 17.899 11.6597 17.8432C11.5423 17.7875 11.4388 17.7062 11.3569 17.6052L7.15354 12.3837C7.02554 12.228 6.95557 12.0327 6.95557 11.8311C6.95557 11.6295 7.02554 11.4342 7.15354 11.2785L11.5048 6.05696C11.6525 5.87924 11.8648 5.76748 12.0949 5.74626C12.325 5.72505 12.5541 5.79611 12.7319 5.94383C12.9096 6.09154 13.0213 6.30381 13.0426 6.53393C13.0638 6.76404 12.9927 6.99317 12.845 7.17089L8.95496 11.8354L12.7145 16.5C12.8209 16.6277 12.8885 16.7833 12.9093 16.9482C12.93 17.1132 12.9031 17.2807 12.8317 17.4308C12.7603 17.5809 12.6474 17.7075 12.5063 17.7955C12.3652 17.8834 12.2019 17.9292 12.0357 17.9272Z" fill="black"/>
                                     <rect class="nextBtn" x="31.3291" width="23.6709" height="23.6709" rx="8" fill="#FFFEFE"/>
                                     <path d="M41.572 5.74367C41.702 5.74323 41.8305 5.77192 41.9479 5.82764C42.0654 5.88336 42.1689 5.96469 42.2508 6.06566L46.4541 11.2872C46.5821 11.4429 46.6521 11.6382 46.6521 11.8398C46.6521 12.0414 46.5821 12.2367 46.4541 12.3924L42.1029 17.6139C41.9551 17.7916 41.7429 17.9034 41.5128 17.9246C41.2826 17.9458 41.0535 17.8748 40.8758 17.7271C40.6981 17.5793 40.5863 17.3671 40.5651 17.137C40.5439 16.9068 40.615 16.6777 40.7627 16.5L44.6527 11.8354L40.8932 7.17088C40.7868 7.04314 40.7192 6.88759 40.6984 6.72264C40.6776 6.55768 40.7045 6.39022 40.7759 6.24008C40.8474 6.08994 40.9603 5.96339 41.1014 5.87542C41.2424 5.78745 41.4058 5.74173 41.572 5.74367Z" fill="black"/>
                                     </svg>
@@ -183,6 +187,7 @@
 
                             <div>
                                 <h3 class="title">Recently Played</h3>
+                                <div class="prevBox"></div>
                                 <svg class="next-prev-Btn" width="55" height="24" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="prevBtn" d="M12.0357 17.9272C11.9056 17.9277 11.7772 17.899 11.6597 17.8432C11.5423 17.7875 11.4388 17.7062 11.3569 17.6052L7.15354 12.3837C7.02554 12.228 6.95557 12.0327 6.95557 11.8311C6.95557 11.6295 7.02554 11.4342 7.15354 11.2785L11.5048 6.05696C11.6525 5.87924 11.8648 5.76748 12.0949 5.74626C12.325 5.72505 12.5541 5.79611 12.7319 5.94383C12.9096 6.09154 13.0213 6.30381 13.0426 6.53393C13.0638 6.76404 12.9927 6.99317 12.845 7.17089L8.95496 11.8354L12.7145 16.5C12.8209 16.6277 12.8885 16.7833 12.9093 16.9482C12.93 17.1132 12.9031 17.2807 12.8317 17.4308C12.7603 17.5809 12.6474 17.7075 12.5063 17.7955C12.3652 17.8834 12.2019 17.9292 12.0357 17.9272Z" fill="black"/>
                                     <rect class="nextBtn" x="31.3291" width="23.6709" height="23.6709" rx="8" fill="#FFFEFE"/>
@@ -194,7 +199,7 @@
                                 <div class="recently__box--big">
                                     <div class="recently__box--big-container">
                                         <img src="src/images/recently/zaakaan.png" alt="" srcset="">
-                                        <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg data-id="__HjjoerfUHUhgrVg" class="recently__playIcon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect x="18.15" y="19.8" width="29.7" height="28.05" fill="white"/>
                                             <path d="M66 33C66 41.7521 62.5232 50.1458 56.3345 56.3345C50.1458 62.5232 41.7521 66 33 66C24.2479 66 15.8542 62.5232 9.66548 56.3345C3.47678 50.1458 0 41.7521 0 33C0 24.2479 3.47678 15.8542 9.66548 9.66548C15.8542 3.47678 24.2479 0 33 0C41.7521 0 50.1458 3.47678 56.3345 9.66548C62.5232 15.8542 66 24.2479 66 33V33ZM28.0087 21.0086C27.7003 20.789 27.3375 20.6586 26.9598 20.6315C26.5822 20.6045 26.2045 20.6819 25.8679 20.8553C25.5314 21.0287 25.249 21.2913 25.0518 21.6145C24.8547 21.9377 24.7502 22.3089 24.75 22.6875V43.3125C24.7502 43.6911 24.8547 44.0623 25.0518 44.3855C25.249 44.7087 25.5314 44.9713 25.8679 45.1447C26.2045 45.3181 26.5822 45.3955 26.9598 45.3685C27.3375 45.3414 27.7003 45.211 28.0087 44.9914L42.4462 34.6789C42.7136 34.4881 42.9315 34.2362 43.0819 33.9442C43.2323 33.6522 43.3107 33.3285 43.3107 33C43.3107 32.6715 43.2323 32.3478 43.0819 32.0558C42.9315 31.7638 42.7136 31.5119 42.4462 31.3211L28.0087 21.0086V21.0086Z" fill="url(#paint0_linear_28_469)"/>
                                             <defs>
@@ -211,11 +216,11 @@
 
                                 <div class="recently__box">
                                     <div class="recently__container">
-                                        <div class="recently__content">
+                                        <div data-id="__AgjhDghiuHGUgkh" class="recently__content">
                                             <img src="src/images/recently/bahram.png" alt="">
                                             <div class="recently__name">
                                                 <span>Bahram</span>
-                                                <p>Gozar</p>
+                                                <p class="title">Gozar</p>
                                             </div>
                                             <svg width="168" height="24" viewBox="0 0 168 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect y="9" width="3" height="6" rx="1.5" fill="#D9D9D9"/>
@@ -284,7 +289,7 @@
 
 
                                         </div>
-                                        <div class="recently__content">
+                                        <div data-id="__gfhGHfgghffGhfg" class="recently__content">
                                             <img src="src/images/recently/sorena.png" alt="">
                                             <div class="recently__name">
                                                 <span>Ali Sorena</span>
@@ -391,294 +396,368 @@
                             <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3.5" cy="3.5" r="3.5" fill="#24E137"/>
                                 </svg>
-                            <p>
-                                <div class="friends__name">
+                            <div class="friends__name">
+                                <p>
                                     Danw Jones
-                            </p>
-                            <span>Listeening to Khali</span>
-
+                                </p>
+                                <span>Listeening to Khali</span>
                             </div>
                             <svg width="126" height="18" viewBox="0 0 126 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="90" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="108.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="112.5" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="116.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="120" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="123.75" y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#24E137"/>
-                            <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#24E137"/>
-                            <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#24E137"/>
-                            <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#24E137"/>
-                            <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#24E137"/>
-                            <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#24E137"/>
-                            <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#24E137"/>
-                            <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#24E137"/>
-                            <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#24E137"/>
-                            <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#24E137"/>
-                            <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#24E137"/>
-                            <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#24E137"/>
-                            <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#24E137"/>
-                            <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#24E137"/>
-                            <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#24E137"/>
-                            </svg>
+                                <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="90" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="108.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="112.5" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="116.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="120" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="123.75" y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#24E137"/>
+                                <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#24E137"/>
+                                <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#24E137"/>
+                                <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#24E137"/>
+                                <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#24E137"/>
+                                <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#24E137"/>
+                                <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#24E137"/>
+                                <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#24E137"/>
+                                <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#24E137"/>
+                                <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#24E137"/>
+                                <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#24E137"/>
+                                <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#24E137"/>
+                                <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#24E137"/>
+                                <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#24E137"/>
+                                <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#24E137"/>
+                                </svg>
                         </div>
+
                         <div class="friends__content">
                             <img src="src/images/friends/wade.png" alt="">
                             <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3.5" cy="3.5" r="3.5" fill="#D3D73F"/>
                                 </svg>
 
-                            <p>
-                                <div class="friends__name">
+                            <div class="friends__name">
+                                <p>
                                     Wade Warren
-                            </p>
-                            <span>Listeening to Chera badi</span>
-
-
-
+                                </p>
+                                <span>Listeening to Chera badi</span>
                             </div>
+
+
                             <svg width="126" height="18" viewBox="0 0 126 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="90" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="108.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="112.5" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="116.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="120" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="123.75" y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#CBCF03"/>
-                            <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
-                            <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#CBCF03"/>
-                            <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#CBCF03"/>
-                            <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#CBCF03"/>
-                            <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
-                            <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#CBCF03"/>
-                            <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#CBCF03"/>
-                            <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#CBCF03"/>
-                            <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
-                            <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
-                            <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#CBCF03"/>
-                            <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#CBCF03"/>
-                            <rect x="90" width="2.25" height="18" rx="1.125" fill="#CBCF03"/>
-                            <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#CBCF03"/>
-                            <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#CBCF03"/>
-                            <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
-                            <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
-                            </svg>
+                                <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="90" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="108.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="112.5" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="116.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="120" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                <rect x="123.75" y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
+                                <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#CBCF03"/>
+                                <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
+                                <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#CBCF03"/>
+                                <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#CBCF03"/>
+                                <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#CBCF03"/>
+                                <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
+                                <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#CBCF03"/>
+                                <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#CBCF03"/>
+                                <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#CBCF03"/>
+                                <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
+                                <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
+                                <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#CBCF03"/>
+                                <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#CBCF03"/>
+                                <rect x="90" width="2.25" height="18" rx="1.125" fill="#CBCF03"/>
+                                <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#CBCF03"/>
+                                <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#CBCF03"/>
+                                <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
+                                <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#CBCF03"/>
+                                </svg>
                         </div>
                         <div class="friends__content">
                             <img src="src/images/friends/fox.png" alt="">
                             <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="3.5" cy="3.5" r="3.5" fill="#F3459A"/>
-                                </svg>
+                                    <circle cx="3.5" cy="3.5" r="3.5" fill="#F3459A"/>
+                                    </svg>
 
-                            <p>
-                                <div class="friends__name">
+                            <div class="friends__name">
+                                <p>
                                     Robert Fox
-                            </p>
-                            <span>Listeening to Farda</span>
-
-
+                                </p>
+                                <span>Listeening to Farda</span>
                             </div>
+
                             <svg width="126" height="18" viewBox="0 0 126 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="90" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="108.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="112.5" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="116.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="120" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="123.75" y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#F50D7D"/>
-                            <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#F50D7D"/>
-                            <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#F50D7D"/>
-                            <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#F50D7D"/>
-                            <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#F50D7D"/>
-                            <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#F50D7D"/>
-                            <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#F50D7D"/>
-                            <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#F50D7D"/>
-                            <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#F50D7D"/>
-                            <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#F50D7D"/>
-                            <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#F50D7D"/>
-                            <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#F50D7D"/>
-                            <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#F50D7D"/>
-                            <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#F50D7D"/>
-                            </svg>
+                                      <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="90" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="108.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="112.5" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="116.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="120" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                      <rect x="123.75" y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
+                                      <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#F50D7D"/>
+                                      <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#F50D7D"/>
+                                      </svg>
                         </div>
                         <div class="friends__content">
                             <img src="src/images/friends/guy.png" alt="">
                             <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="3.5" cy="3.5" r="3.5" fill="#FCC608"/>
-                                </svg>
-                            <p>
-                                <div class="friends__name">
+                                        <circle cx="3.5" cy="3.5" r="3.5" fill="#FCC608"/>
+                                        </svg>
+                            <div class="friends__name">
+                                <p>
                                     Guy Hawkins
-                            </p>
-                            <span>Listeening to Oraghi</span>
+                                </p>
+                                <span>Listeening to Oraghi</span>
+                            </div>
 
+                            <svg width="126" height="18" viewBox="0 0 126 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="90" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="108.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="112.5" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="116.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="120" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
+                                    <rect x="123.75" y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
+                                    <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#FCC608"/>
+                                    <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#FCC608"/>
+                                    <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#FCC608"/>
+                                    <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#FCC608"/>
+                                    <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#FCC608"/>
+                                    <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#FCC608"/>
+                                    <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#FCC608"/>
+                                    <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#FCC608"/>
+                                    <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#FCC608"/>
+                                    <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#FCC608"/>
+                                    <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#FCC608"/>
+                                    <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#FCC608"/>
+                                    </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player">
+                    <img class="player__cover" src="" alt="">
+                    <div class="player__controllers">
+                        <p class="player__title"></p>
+                        <p class="player__subTitle"></p>
+                        <audio id="music" src=""></audio>
+                        <div class="progress__container">
+                            <progress class="progress__bar" value="0" max="100"></progress>
+                            <div draggable="false" class="progress__dot"></div>
+                            <div class="player__time">
+                                <p class="player__currentTime">0:00</p>
+                                <p class="player__duration">00:00</p>
+                            </div>
+                        </div>
+
+                        <div class="player__controller">
+                            <div class="player__nextBtn">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M33.3333 12.5C32.7807 12.5 32.2508 12.7195 31.8601 13.1102C31.4694 13.5009 31.2499 14.0308 31.2499 14.5833V22.5417L30.9583 22.2292L20.3333 13.4583C19.6936 12.9458 18.9228 12.6233 18.1088 12.5275C17.2948 12.4318 16.4702 12.5666 15.7291 12.9167C15.1045 13.2157 14.5773 13.6855 14.2086 14.2718C13.8399 14.858 13.6448 15.5366 13.6458 16.2292L13.6458 33.7708C13.6448 34.4634 13.8399 35.142 14.2086 35.7282C14.5773 36.3145 15.1045 36.7843 15.7291 37.0833C16.3246 37.3542 16.9707 37.4961 17.6249 37.5C18.611 37.5012 19.5674 37.1628 20.3333 36.5417L30.9583 27.7708L31.2499 27.4583V35.4167C31.2499 35.9692 31.4694 36.4991 31.8601 36.8898C32.2508 37.2805 32.7807 37.5 33.3333 37.5C33.8858 37.5 34.4157 37.2805 34.8064 36.8898C35.1971 36.4991 35.4166 35.9692 35.4166 35.4167V14.5833C35.4166 14.0308 35.1971 13.5009 34.8064 13.1102C34.4157 12.7195 33.8858 12.5 33.3333 12.5Z" fill="#B4B6C9" fill-opacity="0.5"/>
+                                        </svg>
+                            </div>
+                            <div class="player__increase">
+                                <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_28_514)">
+                                    <path d="M9.33 4.67C4.18 4.67 0 8.84 0 14C0 19.16 4.18 23.33 9.33 23.33C14.48 23.33 18.66 19.15 18.66 14H16.33C16.33 17.86 13.19 21 9.33 21C5.47 21 2.33 17.86 2.33 14C2.33 10.14 5.47 7 9.33 7V11.67L15.16 5.84L9.33 0V4.67Z" fill="#8F89A1"/>
+                                    <path d="M8.04988 17.5H7.05988V13.7L5.87988 14.06V13.25L7.94988 12.52H8.04988V17.5ZM13.0399 15.45C13.0399 15.82 13.0099 16.15 12.9199 16.41C12.8399 16.67 12.7199 16.9 12.5799 17.08C12.4399 17.25 12.2499 17.38 12.0499 17.47C11.8499 17.55 11.6199 17.59 11.3599 17.59C11.0999 17.59 10.8799 17.55 10.6699 17.47C10.4599 17.39 10.2899 17.26 10.1299 17.08C9.97988 16.9 9.85988 16.68 9.77988 16.41C9.69988 16.14 9.64988 15.83 9.64988 15.45V14.59C9.64988 14.22 9.67988 13.89 9.76988 13.63C9.84988 13.37 9.96988 13.14 10.1099 12.97C10.2499 12.8 10.4399 12.67 10.6299 12.59C10.8299 12.51 11.0599 12.47 11.3199 12.47C11.5799 12.47 11.7999 12.5 12.0099 12.59C12.2199 12.67 12.3999 12.8 12.5499 12.97C12.6999 13.15 12.8199 13.37 12.8999 13.63C12.9799 13.9 13.0299 14.21 13.0299 14.59V15.45H13.0399ZM12.0499 14.45C12.0499 14.23 12.0399 14.04 11.9999 13.89C11.9699 13.74 11.9199 13.62 11.8599 13.53C11.7999 13.44 11.7299 13.37 11.6399 13.33C11.5499 13.3 11.4499 13.27 11.3499 13.27C11.2499 13.27 11.1399 13.29 11.0599 13.33C10.9799 13.36 10.8999 13.44 10.8399 13.53C10.7799 13.62 10.7399 13.74 10.6999 13.89C10.6699 14.04 10.6499 14.23 10.6499 14.45V15.58C10.6499 15.8 10.6599 15.99 10.6999 16.14C10.7299 16.29 10.7799 16.42 10.8399 16.51C10.8999 16.6 10.9699 16.67 11.0599 16.71C11.1499 16.74 11.2499 16.77 11.3499 16.77C11.4499 16.77 11.5599 16.75 11.6399 16.71C11.7199 16.68 11.7999 16.6 11.8599 16.51C11.9199 16.42 11.9599 16.29 11.9899 16.14C12.0099 15.99 12.0399 15.8 12.0399 15.58V14.45H12.0499V14.45Z" fill="#8F89A1"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_28_514">
+                                    <rect width="18.67" height="23.33" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            </div>
+                            <div class="player__play">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="7.5" y="10.0001" width="35" height="30" fill="white"/>
+                                    <rect x="13.75" y="15" width="22.5" height="21.25" fill="white"/>
+                                    <path d="M50 25C50 31.6304 47.3661 37.9893 42.6777 42.6777C37.9893 47.3661 31.6304 50 25 50C18.3696 50 12.0107 47.3661 7.32233 42.6777C2.63392 37.9893 0 31.6304 0 25C0 18.3696 2.63392 12.0107 7.32233 7.32233C12.0107 2.63392 18.3696 0 25 0C31.6304 0 37.9893 2.63392 42.6777 7.32233C47.3661 12.0107 50 18.3696 50 25ZM21.2188 15.9156C20.9851 15.7493 20.7102 15.6504 20.4241 15.63C20.1381 15.6095 19.8519 15.6681 19.5969 15.7995C19.3419 15.9308 19.1281 16.1298 18.9787 16.3746C18.8293 16.6195 18.7502 16.9007 18.75 17.1875V32.8125C18.7502 33.0993 18.8293 33.3805 18.9787 33.6254C19.1281 33.8702 19.3419 34.0692 19.5969 34.2005C19.8519 34.3319 20.1381 34.3905 20.4241 34.37C20.7102 34.3496 20.9851 34.2507 21.2188 34.0844L32.1562 26.2719C32.3588 26.1273 32.5239 25.9365 32.6378 25.7153C32.7517 25.4941 32.8111 25.2488 32.8111 25C32.8111 24.7512 32.7517 24.5059 32.6378 24.2847C32.5239 24.0635 32.3588 23.8727 32.1562 23.7281L21.2188 15.9156Z" fill="url(#paint0_linear_28_509)"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_28_509" x1="25" y1="0" x2="25" y2="50" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#628EF1"/>
+                                    <stop offset="1" stop-color="#26D1DB"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>
+                            </div>
+                            <div class="player__Decrease">
+                                <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_28_517)">
+                                    <path d="M9.33 4.67V0L3.5 5.83L9.33 11.66V7C13.19 7 16.33 10.14 16.33 14C16.33 17.86 13.19 21 9.33 21C5.47 21 2.33 17.86 2.33 14H0C0 19.16 4.18 23.33 9.33 23.33C14.48 23.33 18.66 19.15 18.66 14C18.66 8.85 14.49 4.67 9.33 4.67Z" fill="#8F89A1"/>
+                                    <path d="M8.04988 17.5H7.05988V13.7L5.87988 14.06V13.25L7.94988 12.52H8.04988V17.5ZM13.0399 15.45C13.0399 15.82 13.0099 16.15 12.9199 16.41C12.8399 16.67 12.7199 16.9 12.5799 17.08C12.4399 17.25 12.2499 17.38 12.0499 17.47C11.8499 17.55 11.6199 17.59 11.3599 17.59C11.0999 17.59 10.8799 17.55 10.6699 17.47C10.4599 17.39 10.2899 17.26 10.1299 17.08C9.97988 16.9 9.85988 16.68 9.77988 16.41C9.69988 16.14 9.64988 15.83 9.64988 15.45V14.59C9.64988 14.22 9.67988 13.89 9.76988 13.63C9.84988 13.37 9.96988 13.14 10.1099 12.97C10.2499 12.8 10.4399 12.67 10.6299 12.59C10.8299 12.51 11.0599 12.47 11.3199 12.47C11.5799 12.47 11.7999 12.5 12.0099 12.59C12.2199 12.67 12.3999 12.8 12.5499 12.97C12.6999 13.15 12.8199 13.37 12.8999 13.63C12.9799 13.9 13.0299 14.21 13.0299 14.59V15.45H13.0399ZM12.0499 14.45C12.0499 14.23 12.0399 14.04 11.9999 13.89C11.9699 13.74 11.9199 13.62 11.8599 13.53C11.7999 13.44 11.7299 13.37 11.6399 13.33C11.5499 13.3 11.4499 13.27 11.3499 13.27C11.2499 13.27 11.1399 13.29 11.0599 13.33C10.9799 13.36 10.8999 13.44 10.8399 13.53C10.7799 13.62 10.7399 13.74 10.6999 13.89C10.6699 14.04 10.6499 14.23 10.6499 14.45V15.58C10.6499 15.8 10.6599 15.99 10.6999 16.14C10.7299 16.29 10.7799 16.42 10.8399 16.51C10.8999 16.6 10.9699 16.67 11.0599 16.71C11.1499 16.74 11.2499 16.77 11.3499 16.77C11.4499 16.77 11.5599 16.75 11.6399 16.71C11.7199 16.68 11.7999 16.6 11.8599 16.51C11.9199 16.42 11.9599 16.29 11.9899 16.14C12.0099 15.99 12.0399 15.8 12.0399 15.58V14.45H12.0499V14.45Z" fill="#8F89A1"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_28_517">
+                                    <rect width="18.67" height="23.33" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            </div>
+                            <div class="player__prevBtn">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6667 37.5C17.2193 37.5 17.7492 37.2805 18.1399 36.8898C18.5306 36.4991 18.7501 35.9692 18.7501 35.4167L18.7501 27.4583L19.0417 27.7708L29.6667 36.5417C30.3064 37.0542 31.0772 37.3767 31.8912 37.4725C32.7052 37.5682 33.5298 37.4334 34.2709 37.0833C34.8955 36.7843 35.4227 36.3145 35.7914 35.7282C36.1601 35.142 36.3552 34.4634 36.3542 33.7708L36.3542 16.2292C36.3552 15.5366 36.1601 14.858 35.7914 14.2718C35.4227 13.6855 34.8955 13.2157 34.2709 12.9167C33.6754 12.6458 33.0293 12.5039 32.3751 12.5C31.389 12.4988 30.4326 12.8372 29.6667 13.4583L19.0417 22.2292L18.7501 22.5417L18.7501 14.5833C18.7501 14.0308 18.5306 13.5009 18.1399 13.1102C17.7492 12.7195 17.2193 12.5 16.6667 12.5C16.1142 12.5 15.5843 12.7195 15.1936 13.1102C14.8029 13.5009 14.5834 14.0308 14.5834 14.5833L14.5834 35.4167C14.5834 35.9692 14.8029 36.4991 15.1936 36.8898C15.5843 37.2805 16.1142 37.5 16.6667 37.5Z" fill="#B4B6C9" fill-opacity="0.5"/>
+                                    </svg>
 
                             </div>
-                            <svg width="126" height="18" viewBox="0 0 126 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="78.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="82.5" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="86.25" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="90" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="93.75" y="1.5" width="2.25" height="16.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="97.5" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="101.25" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="105" y="1.5" width="2.25" height="15" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="108.75" y="3" width="2.25" height="12" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="112.5" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="116.25" width="2.25" height="18" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="120" y="4.5" width="2.25" height="9" rx="1.125" fill="#D9D9D9"/>
-                            <rect x="123.75" y="6.75" width="2.25" height="4.5" rx="1.125" fill="#D9D9D9"/>
-                            <rect y="6.75" width="2.25" height="4.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="3.75" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="7.5" y="0.75" width="2.25" height="16.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="11.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="15" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="18.75" y="4.5" width="2.25" height="9" rx="1.125" fill="#FCC608"/>
-                            <rect x="22.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#FCC608"/>
-                            <rect x="26.25" y="3" width="2.25" height="12" rx="1.125" fill="#FCC608"/>
-                            <rect x="30" y="3" width="2.25" height="12" rx="1.125" fill="#FCC608"/>
-                            <rect x="33.75" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="37.5" y="5.25" width="2.25" height="7.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="41.25" y="2.25" width="2.25" height="13.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="45" y="4.5" width="2.25" height="9" rx="1.125" fill="#FCC608"/>
-                            <rect x="48.75" y="1.5" width="2.25" height="15" rx="1.125" fill="#FCC608"/>
-                            <rect x="52.5" width="2.25" height="18" rx="1.125" fill="#FCC608"/>
-                            <rect x="56.25" width="2.25" height="18" rx="1.125" fill="#FCC608"/>
-                            <rect x="60" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="63.75" y="3" width="2.25" height="12" rx="1.125" fill="#FCC608"/>
-                            <rect x="67.5" y="1.5" width="2.25" height="15" rx="1.125" fill="#FCC608"/>
-                            <rect x="71.25" y="3.75" width="2.25" height="10.5" rx="1.125" fill="#FCC608"/>
-                            <rect x="75" y="1.5" width="2.25" height="15" rx="1.125" fill="#FCC608"/>
-                            </svg>
+                        </div>
 
-        </section>
-        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    </div>
 </body>
 
 </html>

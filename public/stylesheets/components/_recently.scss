@@ -78,3 +78,11 @@
         cursor: pointer;
     }
 }
+
+.dark-mode {
+    .recently {
+        &__content {
+            background: linear-gradient(135.81deg, rgb(44, 44, 44) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
+        }
+    }
+}

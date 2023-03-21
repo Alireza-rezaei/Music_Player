@@ -1,0 +1,38 @@
+.progress {
+    &__bar {
+        overflow: hidden;
+        position: relative;
+        width: 26rem;
+        height: 1rem;
+        background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
+        backdrop-filter: blur(7.5px);
+        height: 1rem;
+        border-radius: 29.5px;
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 29.5px;
+        &::-webkit-progress-bar {
+            background: linear-gradient(135.81deg, rgba(255, 255, 255, 0.4) 4.06%, rgba(255, 255, 255, 0.05) 95.82%);
+        }
+        &::-webkit-progress-value {
+            background: linear-gradient(112.96deg, rgb(97, 141, 240) 17%, rgb(37, 208, 219) 65.81%);
+        }
+    }
+    &__container {
+        position: relative;
+        overflow: hidden;
+    }
+    &__dot {
+        content: "";
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        right: 0;
+        border: .3rem $color-white solid;
+        background: linear-gradient(112.96deg, rgb(97, 141, 240) 17%, rgb(37, 208, 219) 65.81%);
+        border-radius: 50%;
+        top: 43%;
+        transform: translateY(-50%);
+        left: -2rem;
+        z-index: 1;
+    }
+}

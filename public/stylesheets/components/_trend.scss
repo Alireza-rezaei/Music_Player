@@ -1,12 +1,12 @@
     .trend {
         overflow: hidden;
+        width: 96%;
         margin-top: 3rem;
         padding-left: 3rem;
         user-select: none;
         &__boxes {
             @include Flex(flex-start, center);
-            & :first-child,
-            & :last-child {
+            & :first-child {
                 img {
                     margin: 0;
                 }
@@ -20,7 +20,7 @@
             & img {
                 width: 22rem;
                 height: 30rem;
-                margin: 0 14rem 0 13rem;
+                margin-left: 14rem;
                 border-radius: 3rem;
             }
             & span {
@@ -43,6 +43,12 @@
                 margin-left: auto;
                 // margin-top: 2rem;
             }
+        }
+        & .title {
+            width: calc(100% - 9rem);
+            display: inline-block;
+            color: $color-dark;
+            margin: 0 auto 1rem .5rem;
         }
     }
     

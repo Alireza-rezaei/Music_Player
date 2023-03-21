@@ -2,13 +2,20 @@ const logoutAction = () => {
     const logoutBtn = document.querySelector('.logout__btn');
 
     logoutBtn.addEventListener('click', (e) => {
-        const isClose = confirm('Are You Sure Close Music player ?');
-
-        console.log(isClose);
-
-        if (isClose) {
-            console.log('closed');
-        }
+        swal({
+            title: "Are you sure?",
+            text: "Are you sure you want to exit the music player application?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("You have successfully exited the application!", {
+                        icon: "success",
+                    });
+                }
+            });
     });
 };
 

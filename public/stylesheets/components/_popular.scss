@@ -33,8 +33,7 @@
     }
 }
 
-.popular .title,
-.trend .title {
+.popular .title {
     width: calc(100% - 11rem);
     display: inline-block;
     color: $color-dark;
