@@ -155,7 +155,7 @@ const player = () => {
         playerSubTitle.innerHTML = findSong.artist;
         progressBar.value = 0;
         progressDot.style.left = "-2rem";
-        isPlay = true;
+        isPlay = false;
         playSong()
       })
     })
